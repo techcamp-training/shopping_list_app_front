@@ -34,4 +34,3 @@ onMounted(async()=> {
 <style scoped>
 
 </style>
-./stores/GenreStore

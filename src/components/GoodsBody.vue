@@ -66,4 +66,4 @@ const goodsSubmit = async() => {
   padding: 8px;
 }
 
-</style>../stores/GenreStore
+</style>
