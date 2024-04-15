@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { useGenreStore } from '../stores/genreStore'
+import { useGenreStore } from '../stores/GenreStore'
 import { useGoodsStore } from '../stores/GoodsStore';
 const statusList = [
   '未購入',
@@ -66,4 +66,4 @@ const goodsSubmit = async() => {
   padding: 8px;
 }
 
-</style>
+</style>../stores/GenreStore

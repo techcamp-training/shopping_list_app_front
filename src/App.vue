@@ -1,7 +1,7 @@
 <script setup>
 import Header from './components/Header.vue'
 import GoodsList from './components/GoodsList.vue'
-import { useGenreStore } from './stores/genreStore'
+import { useGenreStore } from './stores/GenreStore'
 import { useGoodsStore } from './stores/GoodsStore'
 import { onMounted } from 'vue'
 
@@ -34,3 +34,4 @@ onMounted(async()=> {
 <style scoped>
 
 </style>
+./stores/GenreStore
