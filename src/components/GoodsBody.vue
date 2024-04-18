@@ -11,12 +11,7 @@ const genreStore = useGenreStore();
 const goodsStore = useGoodsStore();
 const emit = defineEmits(['close-modal']); 
 
-const goods = ref({
-  name: '',
-  quantity: '',
-  genreId: '',
-  statusId: 0,
-})
+const goods = ref({});
 
 const goodsSubmit = async() => {
   const resetFormAndCloseModal = () => {
