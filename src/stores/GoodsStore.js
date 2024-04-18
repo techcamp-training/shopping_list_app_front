@@ -9,7 +9,7 @@ export const useGoodsStore = defineStore('goods', () => {
   async function fetchAllGoods() {
     try {
       const response = await api.get('/goods');
-      this.goods = response.data;
+      goods.value = response.data;
     }catch(error){
       console.log("リストの取得ができませんでした",error);
     }
@@ -20,14 +20,7 @@ export const useGoodsStore = defineStore('goods', () => {
     try {
       const response = await api.post('/goods', newGoods)
       const addedGoods = response.data
-      // 追加したジャンルデータをthis.goodsに追加する。
-      this.goods.push({
-        id: addedGoods.id,
-        name: addedGoods.name,
-        quantity: addedGoods.quantity,
-        genreId: addedGoods.genreId,
-        statusId: addedGoods.statusId
-      })
+      goods.push(addedGoods)
     } catch (error) {
       console.log("保存ができませんでした", error);
     }
