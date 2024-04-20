@@ -20,7 +20,7 @@ export const useGoodsStore = defineStore('goods', () => {
     try {
       const response = await api.post('/goods', newGoods)
       const addedGoods = response.data
-      goods.push(addedGoods)
+      goods.value.push(addedGoods)
     } catch (error) {
       console.log("保存ができませんでした", error);
     }
